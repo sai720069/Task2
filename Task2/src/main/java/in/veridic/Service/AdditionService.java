@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class AdditionService
 {
     @Autowired
-    private AdditionUtility additionUtility;
+    private AdditionUtility  additionUtility;
 
     public AdditionResult  Add(int FirstParam, int SecondParam)
     {

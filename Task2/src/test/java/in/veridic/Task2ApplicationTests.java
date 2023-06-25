@@ -22,4 +22,18 @@ class Task2ApplicationTests {
 		Assertions.assertEquals(result,addition);
 
 	}
+	@Test
+	void testAdditionNot()
+	{
+		int a = 1;
+		int b = 2;
+		int notExpectedResult = 5;
+
+		AdditionUtility additionUtility = new AdditionUtility();
+		int addition = additionUtility.addition(a, b);
+		Assertions.assertNotEquals(notExpectedResult,addition);
+
+	}
+
+
 }
